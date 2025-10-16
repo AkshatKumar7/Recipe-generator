@@ -22,20 +22,18 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col justify-center items-center">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 flex flex-col justify-center items-center">
       <div className="max-w-4xl w-full mx-auto text-center mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-          AI-Powered Recipe Generator
-        </h1>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <h1 className="text-6xl font-black mb-4 text-[#7c3aed] font-serif italic tracking-tight drop-shadow-lg">Vivid Recipes</h1>
+        <p className="text-xl text-[#2d3748] max-w-2xl mx-auto font-fira font-semibold italic tracking-wide">
           Login to access personalized recipes powered by AI
         </p>
       </div>
       <form
         onSubmit={handleSubmit}
-        className="bg-card border border-border rounded-xl p-8 shadow-lg w-full max-w-md"
+        className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md"
       >
-        <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
+  <h2 className="text-3xl font-bold mb-6 text-center text-[#7c3aed] font-serif">Login to Vivid Recipes</h2>
         {error && <div className="mb-4 text-red-500">{error}</div>}
         <input
           type="email"

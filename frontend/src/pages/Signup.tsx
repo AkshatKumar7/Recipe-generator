@@ -23,20 +23,18 @@ const Signup: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col justify-center items-center">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 flex flex-col justify-center items-center">
       <div className="max-w-4xl w-full mx-auto text-center mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-          AI-Powered Recipe Generator
-        </h1>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <h1 className="text-5xl font-extrabold mb-4 text-[#5f6fff] font-montserrat">Vivid Recipes</h1>
+        <p className="text-lg text-[#4f4f6d] max-w-2xl mx-auto font-inter">
           Sign up to create your personalized recipe experience
         </p>
       </div>
       <form
         onSubmit={handleSubmit}
-        className="bg-card border border-border rounded-xl p-8 shadow-lg w-full max-w-md"
+        className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md"
       >
-        <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
+        <h2 className="text-4xl font-extrabold mb-6 text-center text-[#5f6fff] font-montserrat">Sign Up for Vivid Recipes</h2>
         {error && <div className="mb-4 text-red-500">{error}</div>}
         <input
           type="text"

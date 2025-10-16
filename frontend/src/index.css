@@ -8,98 +8,102 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 30 20% 98%;
-    --foreground: 20 10% 10%;
+    --background: 220 60% 98%;
+    --foreground: 220 20% 20%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 10% 10%;
+    --card: 210 40% 96%;
+    --card-foreground: 220 20% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 10% 10%;
+    --popover: 210 40% 96%;
+    --popover-foreground: 220 20% 20%;
 
-    --primary: 15 100% 60%;
+    --primary: 280 80% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 174 58% 57%;
+    --secondary: 160 70% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 30 15% 92%;
-    --muted-foreground: 20 5% 45%;
+    --muted: 220 20% 90%;
+    --muted-foreground: 220 10% 40%;
 
-    --accent: 24 95% 53%;
+    --accent: 40 90% 55%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 80% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 20 10% 88%;
-    --input: 20 10% 88%;
-    --ring: 15 100% 60%;
+    --border: 220 20% 80%;
+    --input: 220 20% 80%;
+    --ring: 280 80% 55%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 280 80% 98%;
+    --sidebar-foreground: 280 20% 20%;
+    --sidebar-primary: 280 80% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 160 70% 45%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 20% 80%;
+    --sidebar-ring: 280 80% 55%;
   }
 
   .dark {
-    --background: 20 15% 8%;
-    --foreground: 30 10% 95%;
+    --background: 220 40% 10%;
+    --foreground: 220 20% 90%;
 
-    --card: 20 15% 10%;
-    --card-foreground: 30 10% 95%;
+    --card: 220 40% 15%;
+    --card-foreground: 220 20% 90%;
 
-    --popover: 20 15% 10%;
-    --popover-foreground: 30 10% 95%;
+    --popover: 220 40% 15%;
+    --popover-foreground: 220 20% 90%;
 
-    --primary: 15 100% 60%;
+    --primary: 280 80% 65%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 174 58% 57%;
+    --secondary: 160 70% 55%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 20 10% 18%;
-    --muted-foreground: 20 5% 60%;
+    --muted: 220 20% 20%;
+    --muted-foreground: 220 10% 60%;
 
-    --accent: 24 95% 53%;
+    --accent: 40 90% 65%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62% 30%;
+    --destructive: 0 80% 40%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 20 10% 20%;
-    --input: 20 10% 20%;
-    --ring: 15 100% 60%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 220 20% 30%;
+    --input: 220 20% 30%;
+    --ring: 280 80% 65%;
+    --sidebar-background: 280 80% 10%;
+    --sidebar-foreground: 280 20% 90%;
+    --sidebar-primary: 280 80% 65%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 160 70% 55%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 20% 30%;
+    --sidebar-ring: 280 80% 65%;
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
+
+  html {
+    font-family: 'Poppins', 'Fira Sans', 'Segoe UI', Arial, sans-serif;
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    letter-spacing: 0.5px;
   }
 
-  body {
-    @apply bg-background text-foreground;
+  ::-webkit-scrollbar {
+    width: 10px;
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 6px;
+    border: 2px solid hsl(var(--background));
   }
 }

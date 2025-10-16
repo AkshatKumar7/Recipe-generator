@@ -227,17 +227,17 @@ const Index = () => {
           <section className="bg-gradient-to-br from-primary/10 via-secondary/10 to-background py-16 px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-8">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  AI-Powered Recipe Generator
+                <h1 className="text-6xl font-black mb-4 text-[#7c3aed] font-serif italic tracking-tight drop-shadow-lg">
+                  Welcome to Vivid Recipes
                 </h1>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Add your ingredients, set your preferences, and let AI create personalized recipes just for you
+                <p className="text-xl text-[#2d3748] max-w-2xl mx-auto font-fira font-semibold italic tracking-wide">
+                  Generate delicious recipes with AI, tailored to your pantry and preferences.
                 </p>
               </div>
 
               {/* Ingredient Input Section */}
               <div className="bg-card border border-border rounded-xl p-6 shadow-lg mb-6">
-                <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+                <h2 className="text-3xl font-bold mb-4 flex items-center gap-2 text-[#7c3aed] font-serif">
                   <UtensilsCrossed className="w-6 h-6 text-primary" />
                   Your Ingredients
                 </h2>
@@ -258,7 +258,7 @@ const Index = () => {
 
               {/* Filters Section */}
               <div className="bg-card border border-border rounded-xl p-6 shadow-lg mb-6">
-                <h3 className="font-semibold text-lg mb-4">Additional Filters</h3>
+                <h3 className="font-bold text-xl mb-4 text-[#2d3748] font-fira italic">Additional Filters</h3>
                 <div className="flex flex-wrap gap-3">
                   <Select value={difficultyFilter} onValueChange={setDifficultyFilter}>
                     <SelectTrigger className="w-[140px]">

@@ -9,13 +9,13 @@ interface NavbarProps {
 
 export const Navbar = ({ onNavigate, currentSection, favoritesCount }: NavbarProps) => {
   return (
-    <nav className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
+      <nav className="bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 sticky top-0 z-50 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
             <ChefHat className="w-8 h-8 text-primary" />
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Smart Recipe Generator
+              <span className="text-3xl font-extrabold text-[#5f6fff] tracking-wide font-montserrat">
+                Vivid Recipes
             </span>
           </div>
           
