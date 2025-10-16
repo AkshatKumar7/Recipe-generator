@@ -1,4 +1,4 @@
-# Smart Recipe Generator
+# Smart Recipe Generator  (VIVID RECIPES)
 
 A modern web application that allows users to generate, manage, and discover recipes. Users can input ingredients manually or via photo uploads, get dietary suggestions, adjust serving sizes, and save favorite recipes.
 
